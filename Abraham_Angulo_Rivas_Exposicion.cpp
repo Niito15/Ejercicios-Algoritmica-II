@@ -8,28 +8,23 @@
 using namespace std;
 
 int main() {
-    int a, b, c;
-
-    // Solicitar los 3 números
-    cout << "Ingrese el primer número: ";
-    cin >> a;
-    cout << "Ingrese el segundo número: ";
-    cin >> b;
-    cout << "Ingrese el tercer número: ";
-    cin >> c;
-
+    int num1, num2, num3;
     int medio;
-
+    // Pedir los 3 números
+    cout << "Ingrese el primer número: ";
+    cin >> num1;
+    cout << "Ingrese el segundo número: ";
+    cin >> num2;
+    cout << "Ingrese el tercer número: ";
+    cin >> num3;
     // Verificar cuál es el número del medio
-    if ((a > b && a < c) || (a < b && a > c)) {
-        medio = a;
-    } else if ((b > a && b < c) || (b < a && b > c)) {
-        medio = b;
+    if ((num1 > num2 && num1 < num3) || (num1 < num2 && num1 > num3)) {
+        medio = num1;
+    } else if ((num2 > num1 && num2 < num3) || (num2 < num1 && num2 > num3)) {
+        medio = num2;
     } else {
-        medio = c;
+        medio = num3;
     }
-
     cout << "El número del medio es: " << medio << endl;
-
     return 0;
 }
